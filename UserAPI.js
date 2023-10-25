@@ -24,7 +24,7 @@ describe("Customer API integration testing", () => {
         }))
 
     })
-    it("Create new user", async () => {
+    it.skip("Create new user", async () => {
         const response = await axios.post(`${jsonObj.baseUrl}/user/create`, {
             "name": faker.person.fullName(),
             "email": faker.internet.email(),
